@@ -41,6 +41,7 @@ public class JavaFXLife extends Application {
 
         BorderPane borderPane = new BorderPane();
         borderPane.setTop(myMenuBar());
+        //add another menu Ex. black and white or red green. 
         borderPane.setCenter(lifePane);
         borderPane.setBottom(lbStatus);
 
@@ -74,6 +75,7 @@ public class JavaFXLife extends Application {
          * File Menu Section
          */
         MenuItem newCanvas = new MenuItem("New");
+        //add to new menu item , 
         newCanvas.setOnAction((ActionEvent e) -> {
             lifePane.clearCells();
             lifePane.drawCells();
@@ -111,7 +113,7 @@ public class JavaFXLife extends Application {
 
         /**
          * *********************************************************************
-         * Speed Menu Section
+         * Speed Menu Section, add new menu item to whatever menu you chose/ also add the names of the keys you wish the user to user to control. 
          */
         MenuItem pause = new MenuItem("Pause");
         pause.setAccelerator(KeyCombination.valueOf("Left"));
